@@ -1,10 +1,15 @@
 import './App.css';
 import Counter from './Counter';
+import ThemeProvider from './ThemeProvider';
+import ThemeDisplay from './ThemeDisplay';
 
 function App() {
   return (
     <div>
-      <Counter />
+      <ThemeProvider>
+        <ThemeDisplay />
+        <Counter />
+      </ThemeProvider>
     </div>
   );
 }
